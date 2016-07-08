@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F412FD1B1D2C9BE700ABD201 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F412FD1A1D2C9BE700ABD201 /* libsqlite3.0.tbd */; };
+		F412FD211D2C9C5C00ABD201 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FD1E1D2C9C5C00ABD201 /* SQLiteDB.swift */; };
+		F412FD221D2C9C5C00ABD201 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FD1F1D2C9C5C00ABD201 /* SQLTable.swift */; };
+		F412FD231D2C9C5C00ABD201 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FD201D2C9C5C00ABD201 /* String-Extras.swift */; };
+		F412FD251D2C9C6600ABD201 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = F412FD241D2C9C6600ABD201 /* data.db */; };
+		F412FD291D2CA64800ABD201 /* show.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FD281D2CA64800ABD201 /* show.swift */; };
+		F412FD2B1D2CB19900ABD201 /* delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FD2A1D2CB19900ABD201 /* delete.swift */; };
 		F453E8EF1D26661400429EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F453E8EE1D26661400429EBC /* AppDelegate.swift */; };
 		F453E8F11D26661400429EBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F453E8F01D26661400429EBC /* ViewController.swift */; };
 		F453E8F41D26661400429EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F453E8F21D26661400429EBC /* Main.storyboard */; };
@@ -34,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F412FD1A1D2C9BE700ABD201 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F412FD1C1D2C9BF800ABD201 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		F412FD1E1D2C9C5C00ABD201 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		F412FD1F1D2C9C5C00ABD201 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		F412FD201D2C9C5C00ABD201 /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		F412FD241D2C9C6600ABD201 /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = SOURCE_ROOT; };
+		F412FD281D2CA64800ABD201 /* show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = show.swift; sourceTree = "<group>"; };
+		F412FD2A1D2CB19900ABD201 /* delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delete.swift; sourceTree = "<group>"; };
 		F453E8EB1D26661400429EBC /* wx's address list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wx's address list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F453E8EE1D26661400429EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F453E8F01D26661400429EBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F412FD1B1D2C9BE700ABD201 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +90,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F412FD1D1D2C9C5C00ABD201 /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				F412FD1E1D2C9C5C00ABD201 /* SQLiteDB.swift */,
+				F412FD1F1D2C9C5C00ABD201 /* SQLTable.swift */,
+				F412FD201D2C9C5C00ABD201 /* String-Extras.swift */,
+			);
+			path = SQLiteDB;
+			sourceTree = "<group>";
+		};
 		F453E8E21D26661400429EBC = {
 			isa = PBXGroup;
 			children = (
+				F412FD1A1D2C9BE700ABD201 /* libsqlite3.0.tbd */,
+				F412FD241D2C9C6600ABD201 /* data.db */,
+				F412FD1D1D2C9C5C00ABD201 /* SQLiteDB */,
 				F453E8ED1D26661400429EBC /* wx's address list */,
 				F453E9021D26661400429EBC /* wx's address listTests */,
 				F453E90D1D26661400429EBC /* wx's address listUITests */,
@@ -103,6 +132,9 @@
 				F453E8F51D26661400429EBC /* Assets.xcassets */,
 				F453E8F71D26661400429EBC /* LaunchScreen.storyboard */,
 				F453E8FA1D26661400429EBC /* Info.plist */,
+				F412FD281D2CA64800ABD201 /* show.swift */,
+				F412FD1C1D2C9BF800ABD201 /* Header.h */,
+				F412FD2A1D2CB19900ABD201 /* delete.swift */,
 			);
 			path = "wx's address list";
 			sourceTree = "<group>";
@@ -230,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F453E8F91D26661400429EBC /* LaunchScreen.storyboard in Resources */,
+				F412FD251D2C9C6600ABD201 /* data.db in Resources */,
 				F453E8F61D26661400429EBC /* Assets.xcassets in Resources */,
 				F453E8F41D26661400429EBC /* Main.storyboard in Resources */,
 			);
@@ -256,6 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F412FD2B1D2CB19900ABD201 /* delete.swift in Sources */,
+				F412FD291D2CA64800ABD201 /* show.swift in Sources */,
+				F412FD231D2C9C5C00ABD201 /* String-Extras.swift in Sources */,
+				F412FD211D2C9C5C00ABD201 /* SQLiteDB.swift in Sources */,
+				F412FD221D2C9C5C00ABD201 /* SQLTable.swift in Sources */,
 				F453E8F11D26661400429EBC /* ViewController.swift in Sources */,
 				F453E8EF1D26661400429EBC /* AppDelegate.swift in Sources */,
 			);
@@ -403,6 +441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iphone.wx-s-address-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/wx/Desktop/wx's address list/wx's address list/Header.h";
 			};
 			name = Debug;
 		};
@@ -414,6 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iphone.wx-s-address-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/wx/Desktop/wx's address list/wx's address list/Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +522,7 @@
 				F453E9151D26661400429EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F453E9161D26661400429EBC /* Build configuration list for PBXNativeTarget "wx's address listTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +531,7 @@
 				F453E9181D26661400429EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F453E9191D26661400429EBC /* Build configuration list for PBXNativeTarget "wx's address listUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +540,7 @@
 				F453E91B1D26661400429EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
