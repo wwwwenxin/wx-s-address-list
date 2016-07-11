@@ -21,6 +21,7 @@
 		F453E8F91D26661400429EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F453E8F71D26661400429EBC /* LaunchScreen.storyboard */; };
 		F453E9041D26661400429EBC /* wx_s_address_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F453E9031D26661400429EBC /* wx_s_address_listTests.swift */; };
 		F453E90F1D26661400429EBC /* wx_s_address_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F453E90E1D26661400429EBC /* wx_s_address_listUITests.swift */; };
+		F459C8F51D338212000A65A2 /* find.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459C8F41D338212000A65A2 /* find.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		F453E90A1D26661400429EBC /* wx's address listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wx's address listUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F453E90E1D26661400429EBC /* wx_s_address_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wx_s_address_listUITests.swift; sourceTree = "<group>"; };
 		F453E9101D26661400429EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F459C8F41D338212000A65A2 /* find.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = find.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				F412FD281D2CA64800ABD201 /* show.swift */,
 				F412FD1C1D2C9BF800ABD201 /* Header.h */,
 				F412FD2A1D2CB19900ABD201 /* delete.swift */,
+				F459C8F41D338212000A65A2 /* find.swift */,
 			);
 			path = "wx's address list";
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				F412FD211D2C9C5C00ABD201 /* SQLiteDB.swift in Sources */,
 				F412FD221D2C9C5C00ABD201 /* SQLTable.swift in Sources */,
 				F453E8F11D26661400429EBC /* ViewController.swift in Sources */,
+				F459C8F51D338212000A65A2 /* find.swift in Sources */,
 				F453E8EF1D26661400429EBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,11 +21,6 @@ class delete: UIViewController {
         db.execute("create table if not exists user(uid integer primary key,uname varchar(20),mobile varchar(20),email varcher(20),address varcher(20))")
 }
 
-
-
-
-
-
     @IBAction func pop(sender: AnyObject) {
         dell()
     }
